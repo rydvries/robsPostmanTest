@@ -32,7 +32,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: postman login --with-api-key ${{ secrets.Test }}
       - name: Run API tests
         run: |
           postman collection run "23450355-f61fc5d9-addc-43f9-af30-307876d1011c" -e "23450355-4ebcf714-2cad-4af8-8542-4c494d724ae5"
